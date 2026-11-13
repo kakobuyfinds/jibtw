@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>ESGOBuy spreadsheet – hitta produkter och granska QC-bilder</title>
+  <meta name="description" content="Svensk guide till ESGOBuy spreadsheet. Bläddra bland tio kategorier och jämför produktlänkar, storlekar, QC-bilder och frakt innan du beställer.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:title" content="ESGOBuy spreadsheet – svensk köpguide">
+  <meta property="og:description" content="Hitta rätt kategori och jämför mått, produktbilder och fraktvillkor.">
+  <style>
+    :root{color-scheme:light;--paper:#f6f1e8;--ink:#251b2b;--wine:#592344;--line:#d8c9cb;--white:#fffdf8}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    a{color:var(--wine)}
+    a:focus-visible,summary:focus-visible{outline:3px solid #963774;outline-offset:4px}
+    .wrap{width:min(1120px,calc(100% - 2rem));margin-inline:auto}
+    header{padding:.85rem 0;border-bottom:1px solid var(--line)}
+    header a{font-weight:750}
+    .hero{display:grid;grid-template-columns:1.45fr 1fr;align-items:center;gap:1.75rem;padding:1.6rem 0}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2{font-family:Georgia,serif;line-height:1.08;color:var(--wine)}
+    h1{font-size:clamp(2rem,5.8vw,4.5rem);overflow-wrap:anywhere}
+    h2{font-size:clamp(1.7rem,3.5vw,2.6rem)}
+    h3{line-height:1.28}
+    h1+p,h2+p,h3+p{margin-top:.55rem}
+    img{display:block;width:100%;height:auto;background:#eee5e7}
+    .hero img{aspect-ratio:2/1;object-fit:contain;background:#e9dce5;border-radius:.7rem}
+    figcaption{padding:.55rem .7rem;font-size:.875rem}
+    .categories{padding:1.2rem;background:var(--white);border:1px solid var(--line);border-radius:.8rem}
+    .links,.gallery,.articles,.queries{display:grid;gap:.75rem;margin-top:1rem}
+    .links{grid-template-columns:repeat(5,minmax(0,1fr));list-style:none;padding:0;margin-bottom:0}
+    .links a{display:flex;align-items:center;justify-content:center;min-height:3rem;padding:.55rem;text-align:center;background:var(--paper);border:1px solid var(--line);border-radius:.4rem;text-decoration:none;font-weight:650;overflow-wrap:anywhere}
+    .links a:hover,.button:hover{background:#71385c;color:white}
+    section+section{margin-top:2.5rem}
+    .gallery,.articles,.queries{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .gallery figure,.articles article,.queries>div{background:var(--white);border:1px solid var(--line);border-radius:.7rem;overflow:hidden}
+    .gallery img{aspect-ratio:1;object-fit:contain}
+    .articles article,.queries>div{padding:1rem}
+    .articles p+p{margin-top:.6rem}
+    .queries ul{margin:.5rem 0 0;padding-left:1.2rem}
+    details{border-bottom:1px solid var(--line);padding:.85rem 0}
+    summary{cursor:pointer;font-weight:700}
+    details p{margin-top:.4rem}
+    .button{display:inline-block;background:var(--wine);color:white;padding:.65rem 1rem;border-radius:.45rem;text-decoration:none;font-weight:700;margin-top:1rem}
+    footer{margin-top:2.5rem;padding:1rem 0;border-top:1px solid var(--line);font-size:.9rem}
+    @media(max-width:720px){.hero{grid-template-columns:1fr;gap:.8rem}.links,.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:460px){.articles,.queries{grid-template-columns:1fr}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {"@type":"WebPage","name":"ESGOBuy spreadsheet – hitta produkter och granska QC-bilder","description":"Svensk guide till ESGOBuy spreadsheet. Bläddra bland tio kategorier och jämför produktlänkar, storlekar, QC-bilder och frakt innan du beställer.","inLanguage":"sv"},
+      {"@type":"FAQPage","inLanguage":"sv","mainEntity":[
+        {"@type":"Question","name":"Vad är ett ESGOBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Det är en produktlista som samlar länkar och anteckningar för att göra det lättare att hitta och jämföra produkter. Kontrollera alltid den aktuella annonsen för rätt variant och villkor."}},
+        {"@type":"Question","name":"Vad kan jag se på QC-bilder?","acceptedAnswer":{"@type":"Answer","text":"Du kan granska synliga detaljer som sömmar, märkning, färg och mått om en linjal syns. För att bedöma äkthet behövs mer underlag än enbart bilder."}},
+        {"@type":"Question","name":"Hur uppskattar jag frakten till Sverige?","acceptedAnswer":{"@type":"Answer","text":"Välj Sverige som destination och jämför fraktalternativ för paketets vikt och mått. Kontrollera vilka avgifter som ingår innan du betalar."}},
+        {"@type":"Question","name":"Vart leder kategorilänkarna?","acceptedAnswer":{"@type":"Answer","text":"Kategorierna öppnar motsvarande katalogsidor på HipoBuyFind."}}
+      ]}
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/jibtw/">
+</head>
+<body>
+  <!-- Sökunderlag: tio relevanta träffar granskades via webbsökning. Googles första resultatsida i Sverige kunde inte verifieras. -->
+  <header><div class="wrap"><a href="https://www.hipobuyfind.com">HipoBuyFind</a></div></header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <div>
+        <h1 id="title">ESGOBuy spreadsheet</h1>
+        <p>En produktlista hjälper dig att hitta och jämföra varor. Börja med en kategori, öppna den aktuella produktlänken och kontrollera storlek, variant och bilder innan du väljer.</p>
+      </div>
+      <figure>
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto%2Cq_auto%3Aeco%2Cc_scale%2Cw_300%2Cu_9ddf04c7-2a9a-4d76-add1-d15af8f0263d%2Cc_scale%2Cfl_relative%2Cw_1.0%2Ch_1.0%2Cfl_layer_apply/f888b4a3-a02a-420d-93e3-cb33c3bb30ac/AIR%2BFORCE%2B1%2B%2707.png" width="600" height="300" fetchpriority="high" loading="eager" alt="Vit Nike Air Force 1 ’07 Texture">
+        <figcaption>Nike Air Force 1 ’07 Texture · stilreferens</figcaption>
+      </figure>
+    </section>
+    <section class="categories" aria-labelledby="categories">
+      <h2 id="categories">Bläddra efter kategori</h2>
+      <p>Kategorierna öppnas i HipoBuyFinds katalog.</p>
+      <ul class="links">
+        <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Skor</a></li>
+        <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Hoodies och tröjor</a></li>
+        <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirts</a></li>
+        <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Jackor</a></li>
+        <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Byxor och shorts</a></li>
+        <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Huvudbonader</a></li>
+        <li><a href="https://hipobuyfind.com/category-917-Sets.html">Klädset</a></li>
+        <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Underkläder</a></li>
+        <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Matchtröjor</a></li>
+        <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Accessoarer</a></li>
+      </ul>
+    </section>
+    <section aria-labelledby="details">
+      <h2 id="details">Detaljer att titta efter</h2>
+      <p>Bilderna är stilreferenser. Aktuellt sortiment och valbara varianter framgår av respektive annons.</p>
+      <div class="gallery">
+        <figure><img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1707930007/443497_AABZC_1712_004_100_0000_Light-GG-Marmont-medium-shoulder-bag.jpg" width="400" height="400" loading="lazy" decoding="async" alt="Svart kavaj och shorts med ljusgrå Gucci GG Marmont-väska"><figcaption>Gucci GG Marmont · jämför väskans bredd och remmens längd</figcaption></figure>
+        <figure><img src="https://de.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-my-neverfull-carre-90--M96536_PM2_Front%20view.jpg" width="400" height="400" loading="lazy" decoding="async" alt="Rosa och persikofärgad Louis Vuitton My Neverfull-scarf med tryckta remmar"><figcaption>Louis Vuitton My Neverfull · granska kant och tryck</figcaption></figure>
+        <figure><img src="https://assets.hermes.com/is/image/hermesproduct/kappe-riley-h-droit--252059N%2001-front-wm-2-0-0-800-800_g.jpg" width="400" height="400" loading="lazy" decoding="async" alt="Marinblå Hermès Riley-keps med broderat H"><figcaption>Hermès Riley · kontrollera huvudmått och justering</figcaption></figure>
+        <figure><img src="https://bordergara.com/cdn/shop/files/dr-2605-0913_8734b33f-18eb-44f2-bb5f-dc5a3e1727e7_800x.jpg?v=1779318741" width="400" height="400" loading="lazy" decoding="async" alt="Dior Tribales-örhängen med pärlliknande detaljer"><figcaption>Dior Tribales · be om en närbild på fästet</figcaption></figure>
+      </div>
+    </section>
+    <section aria-labelledby="guide">
+      <h2 id="guide">Köpguide för ESGOBuy-sökningar</h2>
+      <div class="articles">
+        <article>
+          <h3>Kontrollera ESGOBuy-produktlänkar</h3>
+          <p>Öppna källannonsen och jämför modell, material och färg med raden du sparade. Om länken öppnar en annan vara, sök på modellnamn eller artikelnummer och kontrollera att din storlek går att välja.</p>
+        </article>
+        <article>
+          <h3>Jämför storlekar i centimeter</h3>
+          <p>Mät innersulan i en sko som passar. För en hoodie kan du lägga ett eget plagg plant och mäta från armhåla till armhåla. Dubbla måttet bara om säljarens tabell anger omkrets.</p>
+        </article>
+        <article>
+          <h3>Granska QC-bilder</h3>
+          <p>QC-bilder är kontrollbilder av den mottagna varan. Be om en bild från sidan och en närbild av den detalj du vill granska. Vid osäker storlek, be om ett foto där måttbandets nollpunkt och slutmått syns.</p>
+        </article>
+        <article>
+          <h3>Jämför frakt till Sverige</h3>
+          <p>Räkna ihop varans kostnad, eventuell inrikesfrakt, serviceavgifter och internationell frakt. Jämför paketmått, spårning och vilka avgifter som ingår. Fråga hur transportören beräknar volymvikt om paketet är skrymmande.</p>
+        </article>
+      </div>
+    </section>
+    <section aria-labelledby="searches">
+      <h2 id="searches">Sökfraser för det du vill kontrollera</h2>
+      <p>Lägg till modellnamn eller artikelnummer om du får för många träffar.</p>
+      <div class="queries">
+        <div><h3>Skor och plagg</h3><ul>
+          <li>ESGOBuy sneakers med innersula i cm</li>
+          <li>ESGOBuy löparskor med bred tåbox</li>
+          <li>ESGOBuy hoodie med bröstvidd i cm</li>
+          <li>ESGOBuy t-shirt med plagglängd</li>
+          <li>ESGOBuy jacka med ärmlängd</li>
+          <li>ESGOBuy byxor med midjemått</li>
+        </ul></div>
+        <div><h3>Accessoarer och sportplagg</h3><ul>
+          <li>ESGOBuy keps med justerbart spänne</li>
+          <li>ESGOBuy väska med remmått</li>
+          <li>ESGOBuy scarf med materialangivelse</li>
+          <li>ESGOBuy örhängen med bild på fästet</li>
+          <li>ESGOBuy matchtröja med storlekstabell</li>
+          <li>ESGOBuy klädset med separata plaggmått</li>
+        </ul></div>
+        <div><h3>Bilder och produktlänkar</h3><ul>
+          <li>ESGOBuy QC-bild på skons storleksetikett</li>
+          <li>ESGOBuy QC-bilder av sömmar</li>
+          <li>ESGOBuy lagerfoto med måttband</li>
+          <li>ESGOBuy källannons via artikelnummer</li>
+          <li>ESGOBuy produktlänk till rätt färgvariant</li>
+          <li>ESGOBuy jämförelse av annonsbild och lagerfoto</li>
+        </ul></div>
+        <div><h3>Frakt och villkor</h3><ul>
+          <li>ESGOBuy fraktestimat till Sverige</li>
+          <li>ESGOBuy internationell frakt med spårning</li>
+          <li>ESGOBuy beräkning av volymvikt</li>
+          <li>ESGOBuy paketvikt med skokartong</li>
+          <li>ESGOBuy avgifter före betalning</li>
+          <li>ESGOBuy returvillkor före vidarefrakt</li>
+        </ul></div>
+      </div>
+    </section>
+    <section aria-labelledby="faq">
+      <h2 id="faq">Vanliga frågor</h2>
+      <details open><summary>Vad är ett ESGOBuy spreadsheet?</summary><p>Det är en produktlista som samlar länkar och anteckningar för att göra det lättare att hitta och jämföra produkter. Kontrollera alltid den aktuella annonsen för rätt variant och villkor.</p></details>
+      <details><summary>Vad kan jag se på QC-bilder?</summary><p>Du kan granska synliga detaljer som sömmar, märkning, färg och mått om en linjal syns. För att bedöma äkthet behövs mer underlag än enbart bilder.</p></details>
+      <details><summary>Hur uppskattar jag frakten till Sverige?</summary><p>Välj Sverige som destination och jämför fraktalternativ för paketets vikt och mått. Kontrollera vilka avgifter som ingår innan du betalar.</p></details>
+      <details><summary>Vart leder kategorilänkarna?</summary><p>Kategorierna öppnar motsvarande katalogsidor på HipoBuyFind.</p></details>
+      <a class="button" href="https://www.hipobuyfind.com">Öppna HipoBuyFind</a>
+    </section>
+  </main>
+  <footer><div class="wrap">Oberoende svensk köpguide. Varumärken och produktbilder används som stilreferenser.</div></footer>
+</body>
+</html>
